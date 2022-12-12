@@ -35,13 +35,6 @@
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
       <ul class="social about-footer {{condensed_class}}">
-        {%- if site.plainwhite.social_links.github -%}
-        <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
-          <li>
-            <i class="icon-github-circled"></i>
-          </li>
-        </a>
-        {%- endif -%}
         {%- if site.plainwhite.social_links.gitlab -%}
         <a href="https://gitlab.com/{{ site.plainwhite.social_links.gitlab }}" target="_blank">
           <li>
@@ -123,13 +116,34 @@
         <a href="mailto:{{ site.plainwhite.social_links.email }}" target="_blank">
           <li>
             <i class="icon-mail-alt"></i>
-          </li>
-        </a>
+          </li> 
+        </a> &nbsp;
         {%- endif -%}
         {%- if site.plainwhite.social_links.stackoverflow -%}
         <a href="https://stackoverflow.com/users/{{ site.plainwhite.social_links.stackoverflow }}" target="_blank">
           <li>
             <i class="icon-stack-overflow"></i>
+          </li>
+        </a>
+        {%- endif -%}
+        {%- if site.plainwhite.social_links.osf -%}
+        <a href="https://osf.io/{{ site.plainwhite.social_links.osf }}" target="_blank">
+          <li>
+            <i class="ai ai-osf big-icon">&nbsp;</i>
+          </li>
+        </a>
+        {%- endif -%}
+        {%- if site.plainwhite.social_links.orcid -%}
+        <a href="https://orcid.org/{{ site.plainwhite.social_links.orcid }}" target="_blank">
+          <li>
+            <i class="ai ai-orcid big-icon">&nbsp;</i>
+          </li>
+        </a>
+        {%- endif -%}
+        {%- if site.plainwhite.social_links.github -%}
+        <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
+          <li>
+            <i class="icon-github-circled"></i>
           </li>
         </a>
         {%- endif -%}
