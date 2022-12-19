@@ -91,12 +91,10 @@ main {
   }
 
   @media screen and (max-width: $mobileW) {
-    margin: 0 10px;
+    margin: 15px 15px;
     flex-direction: column;
   }
-  @media screen and (max-width: $smallMobileW) {
-    margin: 0;
-  }
+  
 
   .content {
     @media screen and (min-width: $mobileW + 1) {
