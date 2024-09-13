@@ -406,9 +406,9 @@ main .about { display: flex; height: 100vh; padding-bottom: 15vh; min-width: 350
 
 @media screen and (min-width: 769px) { main .about { position: fixed; max-width: 280px; } }
 
-main .about h2 { font-size: 22px; margin-top: 25px; margin-bottom: 0; color: #222222; font-weight: normal; }
+main .about h2 { font-size: 18px; margin-top: 25px; margin-bottom: 0; color: #222222; font-weight: normal; }
 
-main .about .tagline { text-align: center; font-size: 22px; margin-top: 0px; color: #aaa; white-space: pre-wrap; line-height: normal; }
+main .about .tagline { text-align: center; font-size: 18px; margin-top: 0px; color: #aaa; white-space: pre-wrap; line-height: normal; }
 
 main .about img { max-width: 150px; }
 
@@ -679,11 +679,11 @@ green     #859900  operators, other keywords
 
 .dark .post-categories li, .dark * .post-categories li { background-color: #333; color: #fff; }
 
-.dark a, .dark * a { color: #4da3ff; }
+.dark a, .dark * a { color: #f6f6f6; }
 
 .dark #title a, .dark * #title a { color: #fff; }
 
-.dark #title a:hover, .dark * #title a:hover { color: #4da3ff; }
+.dark #title a:hover, .dark * #title a:hover { color: #f6f6f6; }
 
 .dark .posts-labelgroup, .dark * .posts-labelgroup { border-bottom: 1px solid #333; }
 
