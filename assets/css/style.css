@@ -56,6 +56,7 @@
 /* '' */
 .icon-stack-overflow:before { content: '\f16c'; }
 
+
 /* '' */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -138,6 +139,26 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
+summary {
+    list-style: none; /* Removes default styling */
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  summary::before {
+    content: "▶"; /* Triangle */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    transition: transform 0.2s ease;
+  }
+  
+  details[open] summary::before {
+    content: "▼"; /* Downward triangle when open */
+  }
 /* Solarized Light 
 For use with Jekyll and Pygments
 http://ethanschoonover.com/solarized
