@@ -140,24 +140,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 td, th { padding: 0; }
 
 summary {
-    list-style: none; /* Removes default styling */
-    cursor: pointer;
-    position: relative;
-    padding-left: 20px;
-  }
-  
-  summary::before {
-    content: "▶"; /* Triangle */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 12px;
-    transition: transform 0.2s ease;
-  }
-  
-  details[open] summary::before {
-    content: "▼"; /* Downward triangle when open */
+    display: list-item; /* Ensures the default arrow appears */
   }
 /* Solarized Light 
 For use with Jekyll and Pygments
