@@ -140,8 +140,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 td, th { padding: 0; }
 
 summary {
-    display: list-item; /* Ensures the default arrow appears */
+  display: list-item; /* Ensures the default arrow appears */
+}
+
+ol li {
+    margin-bottom: 10px; /* Adjust as needed */
   }
+  
 /* Solarized Light 
 For use with Jekyll and Pygments
 http://ethanschoonover.com/solarized
